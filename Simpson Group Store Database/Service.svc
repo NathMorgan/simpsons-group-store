@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Simpson_Group_Store_Database.Service" CodeBehind="Service.svc.cs" %>

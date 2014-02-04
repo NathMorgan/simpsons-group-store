@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Name>Andriod_Mobile</Name>
+    <ProjectGuid>74b2a100-e0c7-4169-8b9d-b6cb19186608</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Andriod_Mobile</RootNamespace>
+    <!-- important to be opened by PHP Tools, when also Phalanger Tools are installed -->
+    <ProjectTypeGuids>{A0786B88-2ADB-4C21-ABE8-AA2D79766269}</ProjectTypeGuids>
+    <AssemblyName>Andriod Mobile</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <IncludeDebugInformation>true</IncludeDebugInformation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <IncludeDebugInformation>false</IncludeDebugInformation>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include=".htaccess" />
+    <Content Include="config.xml" />
+    <Content Include="controllers\class.changeAppPage.js" />
+    <Content Include="controllers\class.getCars.js" />
+    <Content Include="controllers\class.jquery.passstrength.js" />
+    <Content Include="controllers\class.Placeholders.min.js" />
+    <Content Include="controllers\class.retina.js" />
+    <Content Include="controllers\fastbutton.js" />
+    <Content Include="controllers\nprogress.js" />
+    <Content Include="controllers\_notes\dwsync.xml" />
+    <Content Include="cordova.js" />
+    <Content Include="Create_SQL.txt" />
+    <Content Include="images\AccountIcon.png" />
+    <Content Include="images\ajax-loader.gif" />
+    <Content Include="images\icon-72-2x.png" />
+    <Content Include="images\icon-72-hdpi.png" />
+    <Content Include="images\jquery-mobile-logo_medium.png" />
+    <Content Include="images\jquery-mobile-logo_positive.png" />
+    <Content Include="images\jquery-mobile-logo_small.png" />
+    <Content Include="images\phonegap-logo.png" />
+    <Content Include="images\_notes\dwsync.xml" />
+    <Content Include="index.html" />
+    <Content Include="jquery-1.9.1.min.js" />
+    <Content Include="jquery.mobile-1.3.2.js" />
+    <Content Include="jquery.mobile-1.3.2.min.js" />
+    <Content Include="jquery.mobile.structure-1.3.2.css" />
+    <Content Include="jquery.mobile.structure-1.3.2.min.css" />
+    <Content Include="models\_notes\dwsync.xml" />
+    <Content Include="styles\custom_overides.css" />
+    <Content Include="styles\jquery-mobile-fluid960.css" />
+    <Content Include="styles\jquery-mobile-fluid960.min.css" />
+    <Content Include="styles\jquery.mobile.listview.css" />
+    <Content Include="styles\jquery.mobile.panel.css" />
+    <Content Include="styles\jquery.mobile.theme.css" />
+    <Content Include="styles\themes\default\images\ajax-loader.gif" />
+    <Content Include="styles\themes\default\images\icons-18-black.png" />
+    <Content Include="styles\themes\default\images\icons-18-white.png" />
+    <Content Include="styles\themes\default\images\icons-36-black.png" />
+    <Content Include="styles\themes\default\images\icons-36-white.png" />
+    <Content Include="styles\themes\default\images\_notes\dwsync.xml" />
+    <Content Include="styles\themes\default\jquery.mobile-1.3.0.css" />
+    <Content Include="styles\themes\default\jquery.mobile-1.3.0.min.css" />
+    <Content Include="styles\themes\default\jquery.mobile.structure-1.3.0.css" />
+    <Content Include="styles\themes\default\jquery.mobile.structure-1.3.0.min.css" />
+    <Content Include="styles\themes\default\jquery.mobile.theme-1.3.0.css" />
+    <Content Include="styles\themes\default\jquery.mobile.theme-1.3.0.min.css" />
+    <Content Include="styles\themes\default\_notes\dwsync.xml" />
+    <Content Include="styles\themes\ewurf-theme.css" />
+    <Content Include="styles\themes\ewurf-theme.min.css" />
+    <Content Include="styles\themes\images\ajax-loader.gif" />
+    <Content Include="styles\themes\images\icons-18-black.png" />
+    <Content Include="styles\themes\images\icons-18-white.png" />
+    <Content Include="styles\themes\images\icons-36-black.png" />
+    <Content Include="styles\themes\images\icons-36-white.png" />
+    <Content Include="styles\themes\images\_notes\dwsync.xml" />
+    <Content Include="styles\themes\yourProjectTheme.css" />
+    <Content Include="styles\themes\yourProjectTheme.min.css" />
+    <Content Include="styles\themes\_notes\dwsync.xml" />
+    <Content Include="styles\_notes\dwsync.xml" />
+    <Content Include="views\PageView_Cars.html" />
+    <Content Include="_notes\dwsync.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="controllers\" />
+    <Folder Include="controllers\_notes\" />
+    <Folder Include="images\" />
+    <Folder Include="images\_notes\" />
+    <Folder Include="models\" />
+    <Folder Include="models\_notes\" />
+    <Folder Include="styles\" />
+    <Folder Include="styles\themes\" />
+    <Folder Include="styles\themes\default\" />
+    <Folder Include="styles\themes\default\images\" />
+    <Folder Include="styles\themes\default\images\_notes\" />
+    <Folder Include="styles\themes\default\_notes\" />
+    <Folder Include="styles\themes\images\" />
+    <Folder Include="styles\themes\images\_notes\" />
+    <Folder Include="styles\themes\_notes\" />
+    <Folder Include="styles\_notes\" />
+    <Folder Include="views\" />
+    <Folder Include="_notes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="models\model.class.DBConnect.php" />
+    <Compile Include="models\model.class.getMyCars.php" />
+  </ItemGroup>
+</Project>

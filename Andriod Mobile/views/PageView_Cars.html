@@ -1,0 +1,100 @@
+
+<style>
+
+#car-page .ui-btn{
+	max-width:200px;
+	
+}
+
+#my-table{
+	
+min-height:260px;	
+	
+}
+
+
+</style>
+
+
+
+<script src="controllers/class.getCars.js"></script>
+  <div id="wrapper">
+    <header data-role="header">
+    <a href="#home" data-icon="back" class="ui-btn-left">Back</a>
+      <h1>jQuery Mobile Geo Location</h1>
+       </header>
+    <!-- /header --> 
+    
+    
+    
+    <!--Logo-->
+    <section data-role="content" class="constrain headerLogo"></section>
+    
+    <!-- Page Identifier-->
+    <section id="content" data-role="content" data-theme="a" class="center custom-border page-identifier">
+      <h4>Cars Web Service 1</h4>
+    </section>
+    
+    <!--Main Content in Center of Screen
+    <section data-role="content" class="constrain contentBG center"> -->
+      
+      <div class="container_16" data-theme="a">
+   <div class="grid_8" data-theme="a">
+          <div class="gridMarginsRight"> 
+		<ul data-role="listview" data-inset="true" data-theme="a" data-icon="star" class="center mylist jqm-list jqm-home-list ui-listview ui-listview-inset ui-corner-all ui-shadow">
+        
+        <li data-role="list-divider" data-theme="a" class="resultsTxt">Available Web Services</li>
+        
+        <li>
+        
+        <li><button id="getAllCars">Get All Cars</button> <code>https://u0018370.scm.tees.ac.uk/RIA_3/models/model.class.getMyCars.php?action=getAllCars</code></li>
+         <li><button id="getCategorys">Get Categories</button><code>https://u0018370.scm.tees.ac.uk/RIA_3/models/model.class.getMyCars.php?action=getCategorys</code></li>
+          <li><button id="getCategoryCars">Get Cars By Category</button> <code>https://u0018370.scm.tees.ac.uk/RIA_3/models/model.class.getMyCars.php?action=getCategoryCars</code></li>
+        <li></li>
+        
+        
+        </li>
+        </ul>
+        </div>
+          </div>
+          
+          
+          <div class="grid_8" data-theme="a">
+          <div class="gridMarginsRight"> 
+		<ul data-role="listview" data-inset="true" data-theme="a" data-icon="star" class="center mylist jqm-list jqm-home-list ui-listview ui-listview-inset ui-corner-all ui-shadow">
+       
+       	<li data-role="list-divider" data-theme="a" class="resultsTxt">Web Service Results</li>
+       
+        <li>
+        
+        
+        <table data-role="table" id="my-table">
+        
+        
+        
+        </table>
+        
+        
+        
+       
+        
+        </li>
+        
+        </ul>
+        </div>
+          </div>
+		</div>
+
+         <!--</section> /content -->
+
+	  
+	  
+     
+    </section><!--Close Section-->
+    <footer data-tap-toggle="false" data-role="footer" data-position="fixed" class="footer" data-theme="a">
+      <section  data-role="content" data-theme="a" class="center"> Footer</section>
+    </footer>
+    <!--/footer --> 
+    
+  </div>
+  <!-- /close wrapper --> 

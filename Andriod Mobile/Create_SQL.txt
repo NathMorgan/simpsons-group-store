@@ -1,0 +1,82 @@
+/////// myCars  /////////
+
+
+
+TABLES; (myCars_xxxxxxx)
+
+myCars_categorys
+
+myCars_cars
+
+myCars_images
+
+
+-- Create Table: myCars_cars
+--------------------------------------------------------------------------------
+CREATE TABLE myCars_cars
+(
+	`cars_id` INT NOT NULL AUTO_INCREMENT 
+	,PRIMARY KEY (cars_id)
+	,`category_id` INT NOT NULL 
+	,`name` VARCHAR(250)  NULL 
+	,`description` VARCHAR(250)  NULL 
+	,`price` VARCHAR(250)  NULL 
+	,`hp` VARCHAR(250)  NULL 
+	,`doors` VARCHAR(250)  NULL 
+	,`enginesize` VARCHAR(250)  NULL 
+)
+ENGINE=INNODB
+
+
+
+-- Create Table: myCars_images
+--------------------------------------------------------------------------------
+CREATE TABLE myCars_images
+(
+	`images_id` INT NOT NULL  AUTO_INCREMENT
+	,PRIMARY KEY (images_id)
+	,`cars_id` INT NOT NULL 
+	,`imgpath` VARCHAR(250)  NULL 
+)
+ENGINE=INNODB
+
+
+
+-- Create Table: myCars_categorys
+--------------------------------------------------------------------------------
+CREATE TABLE myCars_categorys
+(
+	`category_id` INT NOT NULL AUTO_INCREMENT 
+	,PRIMARY KEY (category_id)
+	,`name` VARCHAR(250)  NULL 
+	,`description` VARCHAR(250)  NULL 
+)
+ENGINE=INNODB
+
+
+
+
+
+
+
+
+
+
+
+
+CREATE table myJourney_users (users_id INT(100) NOT NULL AUTO_INCREMENT, firstN VARCHAR(255), lastN VARCHAR(255), email VARCHAR(255), PassWord VARCHAR(150), PRIMARY KEY(users_id));
+
+
+
+CREATE table myJourney_trip (trip_id INT(100) NOT NULL AUTO_INCREMENT, users_id INT(100), tripTitle VARCHAR(255), tripDesc VARCHAR(255), createDate VARCHAR(10), active VARCHAR(3), PRIMARY KEY(trip_id));
+
+
+
+
+CREATE table myJourney_sectors (sectors_id INT(5) NOT NULL AUTO_INCREMENT, trip_id INT(100), startTime INT(4), startDate VARCHAR(10), startAirport VARCHAR(3), endTime INT(4), endDate VARCHAR(10), endAirport VARCHAR(3), carrierCode VARCHAR(2), flightNumber VARCHAR(10), PRIMARY KEY(sectors_id));
+
+
+
+
+
+
