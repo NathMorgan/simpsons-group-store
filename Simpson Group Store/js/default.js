@@ -1,5 +1,5 @@
-﻿// For an introduction to the Hub template, see the following documentation:
-// http://go.microsoft.com/fwlink/?LinkID=286574
+﻿// For an introduction to the Grid template, see the following documentation:
+// http://go.microsoft.com/fwlink/?LinkID=232446
 (function () {
     "use strict";
 

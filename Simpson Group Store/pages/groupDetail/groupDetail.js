@@ -3,18 +3,15 @@
 
     var ui = WinJS.UI;
 
-    ui.Pages.define("/pages/section/section.html", {
+    ui.Pages.define("/pages/groupDetail/groupDetail.html", {
         /// <field type="WinJS.Binding.List" />
         _items: null,
-
-        processed: function (element) {
-            return WinJS.Resources.processAll(element);
-        },
 
         // This function is called to initialize the page.
         init: function (element, options) {
             var group = Data.resolveGroupReference(options.groupKey);
             this._items = Data.getItemsFromGroup(group);
+            this._pageTitle = group.title;
             var pageList = this._items.createGrouped(
                 function groupKeySelector(item) { return group.key; },
                 function groupDataSelector(item) { return group; }
@@ -24,19 +21,15 @@
             this.itemInvoked = ui.eventHandler(this._itemInvoked.bind(this));
         },
 
-        // This function is called whenever a user navigates to this page.
+        // This function is called whenever a user navigates to this page. 
         ready: function (element, options) {
-            element.querySelector("header[role=banner] .pagetitle").textContent = options.title;
-
-            var listView = element.querySelector(".itemslist").winControl;
-            listView.element.focus();
+            element.querySelector("header[role=banner] .pagetitle").textContent = this._pageTitle;
         },
 
         unload: function () {
             this._items.dispose();
         },
 
-        // This function updates the page layout in response to layout changes.
         updateLayout: function (element) {
             /// <param name="element" domElement="true" />
 
@@ -45,7 +38,7 @@
 
         _itemInvoked: function (args) {
             var item = this._items.getAt(args.detail.itemIndex);
-            WinJS.Navigation.navigate("/pages/item/item.html", { item: Data.getItemReference(item) });
+            WinJS.Navigation.navigate("/pages/itemDetail/itemDetail.html", { item: Data.getItemReference(item) });
         }
     });
 })();
